@@ -7,4 +7,4 @@ class Config(BaseModel, extra=Extra.ignore):
     yesman_threshold = 0.5
 
     # 包含允许的user_id的数组
-    yesman_allowed_user_ids = [<qq号1>, <qq号2>]
+    yesman_allowed_user_ids = [123456, 654321]

@@ -1,6 +1,6 @@
 [project]
 name = "nonebot-plugin-yesman"
-version = "0.1.0"
+version = "0.2.0"
 description = "Yesman for NoneBot2"
 authors = [
     {name = "euds63", email = "erica23187@gmail.com"},
