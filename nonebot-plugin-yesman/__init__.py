@@ -19,9 +19,9 @@ __plugin_meta__ = PluginMetadata(
     name="nonebot-plugin-yesman​",
     description="你的发言，值得被肯定",
     usage="想要回复被肯定时，发言时以`.`或`。`结尾即可。（也可以自定义为自己喜欢的）",
-    type_="application",
-    homepage="https://github.com/EuDs63/nonebot-plugin-yesman"
-    config=Config,
+    type="application",
+    homepage="https://github.com/EuDs63/nonebot-plugin-yesman",
+    config = Config,
 )
 
 global_config = get_driver().config
