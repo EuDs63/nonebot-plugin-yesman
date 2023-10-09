@@ -8,7 +8,7 @@
 
 # nonebot-plugin-yesman
 
-_✨ NoneBot 插件简单描述 ✨_
+_✨ 你的发言，值得被肯定 ✨_
 
 
 <a href="./LICENSE">
