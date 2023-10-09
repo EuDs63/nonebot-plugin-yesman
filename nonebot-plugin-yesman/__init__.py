@@ -15,10 +15,12 @@ from .config import Config
 agree_path = Path(__file__).parent / "agree.txt"
 agree_text = agree_path.read_text('utf-8').splitlines()
 
-__plugin_meta = PluginMetadata(
-    name="Yesman",
+__plugin_meta__ = PluginMetadata(
+    name="nonebot-plugin-yesman​",
     description="你的发言，值得被肯定",
     usage="想要回复被肯定时，发言时以`.`或`。`结尾即可。（也可以自定义为自己喜欢的）",
+    type_="application",
+    homepage="https://github.com/EuDs63/nonebot-plugin-yesman"
     config=Config,
 )
 
