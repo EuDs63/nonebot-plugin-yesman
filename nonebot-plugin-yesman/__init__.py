@@ -16,12 +16,13 @@ agree_path = Path(__file__).parent / "agree.txt"
 agree_text = agree_path.read_text('utf-8').splitlines()
 
 __plugin_meta__ = PluginMetadata(
-    name="nonebot-plugin-yesman​",
+    name="肯定机",
     description="你的发言，值得被肯定",
     usage="想要回复被肯定时，发言时以`.`或`。`结尾即可。（也可以自定义为自己喜欢的）",
     type="application",
     homepage="https://github.com/EuDs63/nonebot-plugin-yesman",
     config = Config,
+    supported_adapters={"~onebot.v11", "~telegram"}, # 仅测试了这两个适配器
 )
 
 global_config = get_driver().config

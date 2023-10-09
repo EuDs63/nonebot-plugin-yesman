@@ -12,7 +12,7 @@ _✨ 你的发言，值得被肯定 ✨_
 
 
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/owner/nonebot-plugin-yesman.svg" alt="license">
+    <img src="https://img.shields.io/github/license/euds63/nonebot-plugin-yesman.svg" alt="license">
 </a>
 <a href="https://pypi.python.org/pypi/nonebot-plugin-yesman">
     <img src="https://img.shields.io/pypi/v/nonebot-plugin-yesman.svg" alt="pypi">
@@ -60,9 +60,6 @@ _✨ 你的发言，值得被肯定 ✨_
     conda install nonebot-plugin-yesman
 </details>
 
-打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot]` 部分追加写入
-
-    plugins = ["nonebot_plugin_example"]
 
 </details>
 
