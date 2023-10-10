@@ -76,5 +76,7 @@ _✨ 你的发言，值得被肯定 ✨_
 
 想要回复被肯定时，发言时以`.`或`。`结尾即可。（也可以自定义为自己喜欢的）
 
+（群聊中使用）
+
 ## 参考
 [A-kirami/nonebot-plugin-answersbook: 愿一切无解都有解！解除你的迷惑，终结你的纠结！](https://github.com/A-kirami/nonebot-plugin-answersbook)

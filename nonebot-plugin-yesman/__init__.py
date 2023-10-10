@@ -22,7 +22,7 @@ __plugin_meta__ = PluginMetadata(
     type="application",
     homepage="https://github.com/EuDs63/nonebot-plugin-yesman",
     config = Config,
-    supported_adapters={"~onebot.v11", "~telegram"}, # 仅测试了这两个适配器
+    supported_adapters={"~onebot.v11"}, # 仅测试了onebot
 )
 
 global_config = get_driver().config
