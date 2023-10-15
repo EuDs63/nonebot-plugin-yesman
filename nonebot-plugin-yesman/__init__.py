@@ -41,7 +41,7 @@ generate_agree = on_message(rule=endswith("."))
 @generate_agree.handle()
 async def agree(event:MessageEvent) -> None:
     print(event.user_id)
-    if event.user_id in config.allowed_user_ids:
+    if event.user_id in config.yesman_allowed_user_ids:
         # 生成一个介于0到1之间的随机浮点数
         random_probability = random.random()
 
