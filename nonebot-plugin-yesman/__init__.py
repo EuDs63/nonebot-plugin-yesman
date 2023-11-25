@@ -45,7 +45,7 @@ async def agree(event:MessageEvent) -> None:
         # 生成一个介于0到1之间的随机浮点数
         random_probability = random.random()
 
-        if random_probability < config.threshold:
+        if random_probability < config.yesman_threshold:
             # 如果生成的随机浮点数小于阈值，发送一条肯定的消息
             await generate_agree.finish(
                 MessageSegment.text(random.choice(agree_text))
