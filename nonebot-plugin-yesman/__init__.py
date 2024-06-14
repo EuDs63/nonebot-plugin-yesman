@@ -1,19 +1,13 @@
+from nonebot import on_message,get_driver
+from nonebot.adapters.onebot.v11 import MessageEvent, MessageSegment
+from nonebot.params import EventPlainText
+from nonebot.plugin import PluginMetadata
+
 import random
 from collections.abc import Callable
 from pathlib import Path
 
-from nonebot import on_message,get_driver
-from nonebot.adapters.onebot.v11 import Message, MessageEvent, MessageSegment
-from nonebot.params import EventPlainText
-from nonebot.plugin import PluginMetadata
-from nonebot.typing import T_State
-
-import random
-from pathlib import Path
 from .config import Config
-
-agree_path = Path(__file__).parent / "agree.txt"
-agree_text = agree_path.read_text('utf-8').splitlines()
 
 __plugin_meta__ = PluginMetadata(
     name="肯定机",
@@ -22,12 +16,14 @@ __plugin_meta__ = PluginMetadata(
     type="application",
     homepage="https://github.com/EuDs63/nonebot-plugin-yesman",
     config = Config,
-    supported_adapters={"~onebot.v11"}, # 仅测试了onebot
+    supported_adapters={"~onebot.v11"},
 )
+
+agree_path = Path(__file__).parent / "agree.txt"
+agree_text = agree_path.read_text('utf-8').splitlines()
 
 global_config = get_driver().config
 config = Config.parse_obj(global_config)
-
 
 # 事件处理器
 def endswith(msg: str) -> Callable[[str], bool]:
